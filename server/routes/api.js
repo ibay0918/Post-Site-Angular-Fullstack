@@ -39,7 +39,7 @@ router.get('/details/:id', function(req, res){
       });
 });
 
-router.get('/posts', function(req, res){
+router.post('/posts', function(req, res){
   console.log('Posting a post');
   var newPost = new post();
   newPost.title = req.body.title;

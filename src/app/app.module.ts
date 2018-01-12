@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {  HttpModule } from '@angular/http';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -12,6 +12,7 @@ import { DetailsComponent } from './details/details.component';
 import { LengthPipe } from './length.pipe';
 import { PostComponent } from './post/post.component';
 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,9 @@ import { PostComponent } from './post/post.component';
     BrowserModule,
     FormsModule,
     HttpModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    BrowserAnimationsModule
   ],
   providers: [PostService],
   bootstrap: [AppComponent]
